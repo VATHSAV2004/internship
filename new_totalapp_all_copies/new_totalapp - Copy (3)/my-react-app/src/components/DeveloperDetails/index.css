@@ -1,0 +1,29 @@
+.imagecss{
+    height:35vh;
+    width:20vw;
+    border: solid;
+    border-radius:50%;
+    border-color:#9ACD32;
+    border-width:10px;
+    border-style: dashed;
+
+}
+.containercss{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.paracss{
+    color: black;
+    font-weight: bold;
+}
+.profile-anchor-css{
+    text-decoration:none;
+    color:blue;
+}
+.descriptioncss{
+    color:darkgray;
+    font-weight: bold;
+}

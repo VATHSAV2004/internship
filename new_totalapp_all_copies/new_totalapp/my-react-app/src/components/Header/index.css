@@ -1,0 +1,34 @@
+.header-css{
+    display: flex;
+    flex-direction:row;
+    padding:10px;
+    left:0;
+    background-color: #161515;
+    box-shadow: rgb(16, 21, 27) 0px 20px 30px -10px;
+
+    width:100%;
+    top:0;
+}
+.logo-css{
+    background-color:#9ACD32;
+    color:white;
+    font-family: "Bree Serif";
+    font-weight: bold;
+    padding:10px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.anchors-container-css{
+    display: flex;
+    flex-direction: row;
+    justify-content:end;
+    padding:30px;
+    flex-grow: 10;
+
+}
+.linkcss{
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+    padding:10px;
+    
+}

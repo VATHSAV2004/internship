@@ -1,0 +1,16 @@
+.address-background{
+    background-color:#545452;
+    height:30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:white;
+}
+.logo-css{
+    background-color:#9ACD32;
+    color:white;
+    font-family: "Bree Serif";
+    font-weight: bold;
+    padding:10px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}

@@ -1,0 +1,29 @@
+.header-css{
+    display: flex;
+    flex-direction:row;
+    padding:10px;
+    left:0;
+
+}
+.logo-css{
+    background-color:#9ACD32;
+    color:white;
+    font-family: "Bree Serif";
+    font-weight: bold;
+    padding:10px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.anchors-container-css{
+    display: flex;
+    flex-direction: row;
+    justify-content:end;
+    padding:30px;
+    flex-grow: 10;
+
+}
+.linkcss{
+    color:#9ACD32;
+    text-decoration: none;
+    padding:10px;
+    
+}

@@ -1,0 +1,45 @@
+.imagecss{
+    height:35vh;
+    width:20vw;
+   
+    border-radius:50%;
+    
+  
+    
+
+}
+.containercss{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.paracss{
+    color: black;
+    font-weight: bold;
+}
+.profile-anchor-css{
+    text-decoration:none;
+    color:blue;
+}
+.descriptioncss{
+    color:darkgray;
+    font-weight: bold;
+}
+.paracss-name{
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+}
+.background-css{
+    background-color: #d1ffbd;
+    align-self: stretch;
+    margin: 60px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+
+.heading-css{
+    color:black ;
+}

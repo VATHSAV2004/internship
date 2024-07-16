@@ -1,0 +1,523 @@
+PS C:\Users\HP\Desktop\dataset_preparation> & C:/Users/HP/anaconda3/python.exe c:/Users/HP/Desktop/dataset_preparation/your_recommender_code.py
+PS C:\Users\HP\Desktop\dataset_preparation> & C:/Users/HP/anaconda3/python.exe c:/Users/HP/Desktop/dataset_preparation/api.py
+ * Serving Flask app 'api'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+ * Restarting with watchdog (windowsapi)
+ * Debugger is active!
+ * Debugger PIN: 135-048-863
+forrtl: error (200): program aborting due to control-C event
+Image              PC                Routine            Line        Source
+libifcoremd.dll    00007FF9E923DF54  Unknown               Unknown  Unknown
+forKERNrELBASE.dll     00007FFA8B4B7D17  Unknown               Unknown  Unknown
+KERNEL32.DLL       00007FFA8C98257D  Unknown               Unknown  Unknown
+ntdll.tl: erdll          00007FFA8DF0AA48  Unknown               Unknown  Unknown
+ror (200): program aborting due to control-C event
+Image              PC                Routine            Line        Source
+libifcoremd.dll    00007FF9E923DF54  Unknown               Unknown  Unknown
+KERNELBASE.dll     00007FFA8B4B7D17  Unknown               Unknown  Unknown
+KERNEL32.DLL       00007FFA8C98257D  Unknown               Unknown  Unknown
+ntdll.dll          00007FFA8DF0AA48  Unknown               Unknown  Unknown
+PS C:\Users\HP\Desktop\dataset_preparation> flask run
+Usage: flask run [OPTIONS]
+> flask run
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+127.0.0.1 - - [14/May/2024 11:41:44] "GET / HTTP/1.1" 404 -
+127.0.0.1 - - [14/May/2024 11:41:44] "GET /favicon.ico HTTP/1.1" 404 -
+forrtl: error (200): program aborting due to control-C event
+Image              PC                Routine            Line        Source
+libifcoremd.dll    00007FF9E923DF54  Unknown               Unknown  Unknown
+KERNELBASE.dll     00007FFA8B4B7D17  Unknown               Unknown  Unknown
+KERNEL32.DLL       00007FFA8C98257D  Unknown               Unknown  Unknown
+ntdll.dll          00007FFA8DF0AA48  Unknown               Unknown  Unknown
+PS C:\Users\HP\Desktop\dataset_preparation> venv\Scripts\activate
+venv\Scripts\activate : The module 'venv' could not be loaded. For more information, run 'Import-Module venv'.
+At line:1 char:1
++ venv\Scripts\activate
++ ~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (venv\Scripts\activate:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CouldNotAutoLoadModule
+
+PS C:\Users\HP\Desktop\dataset_preparation> python app.py
+ * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+ * Restarting with watchdog (windowsapi)
+ * Debugger is active!
+ * Debugger PIN: 135-048-863
+127.0.0.1 - - [14/May/2024 11:54:03] "GET / HTTP/1.1" 404 -
+forrtl: error (200): program aborting due to control-C event
+Image              PC                Routine            Line        Source
+libifcoremd.dll    00007FF9E923DF54  Unknown    forrtl: error (200): p           Unknorogram awn  Ubonrting due to known
+contrKolE-C ReNELBASE.dll     0000vent
+I7mage              PC            FFA  8B4 B7 Routine            LD17  Unknown       i        Unknown ne      Unknown
+KERNEL32.DLL   S o   urce    00007FF        A8C98257D  Un
+knowln               Unibifcoreknownm  Unknown
+ndtdll..dll          00007FFA8Ddll    00007FF0FAA48  Unknown               Unknown  Unkno9E923DF54  Unknown     wn
+          Unknown  Unknown
+KERNELBASE.dll     00007FFA8B4B7D17  Unknown               Unknown  Unknown
+KERNEL32.DLL       00007FFA8C98257D  Unknown               Unknown  Unknown
+ntdll.dll          00007FFA8DF0AA48  Unknown               Unknown  Unknown
+PS C:\Users\HP\Desktop\dataset_preparation> curl -X POST http://127.0.0.1:5000/recommend -H "Content-Type: application/json" -d '{"project_title": "Adversarial Machine Learning for Cyber Defense"}'
+Invoke-WebRequest : Cannot bind parameter 'Headers'. Cannot convert the "Content-Type: application/json" value of type "System.String" to type 
+"System.Collections.IDictionary".
+At line:1 char:49
++ ... /127.0.0.1:5000/recommend -H "Content-Type: application/json" -d '{"p ...
++                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Invoke-WebRequest], ParameterBindingException
+    + FullyQualifiedErrorId : CannotConvertArgumentNoMessage,Microsoft.PowerShell.Commands.InvokeWebRequestCommand
+
+PS C:\Users\HP\Desktop\dataset_preparation> Invoke-RestMethod -Method Post -Uri http://127.0.0.1:5000/recommend -ContentType "application/json" -Body '{"project_title": "Adversarial Machine Learning for Cyber Defense"}'
+Invoke-RestMethod : Unable to connect to the remote server
+At line:1 char:1
++ Invoke-RestMethod -Method Post -Uri http://127.0.0.1:5000/recommend - ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Invoke-RestMethod], WebException
+    + FullyQualifiedErrorId : System.Net.WebException,Microsoft.PowerShell.Commands.InvokeRestMethodCommand
+
+PS C:\Users\HP\Desktop\dataset_preparation> Invoke-RestMethod -Method Post -Uri http://127.0.0.1:5000/recommend -ContentType "application/json" -Body '{"project_title": "Adversarial Machine Learning for Cyber Defense"}'
+Invoke-RestMethod : 
+
+    KeyError: 'Project Title'
+ // Werkzeug Debugger
+
+
+
+
+      var CONSOLE_MODE = false,
+          EVALEX = true,
+          EVALEX_TRUSTED = false,
+          SECRET = "QS8Ix8medmI3Dq353tXU";
+
+
+
+
+KeyError
+  KeyError: &#39;Project Title&#39;
+Traceback (most recent call last)
+
+
+  File "C:\Users\HP\anaconda3\lib\site-packages\pandas\core\indexes\base.py",
+      line 3802,
+      in get_loc
+                      &#34;tolerance argument only valid if using pad, &#34;
+                    &#34;backfill or nearest lookups&#34;
+                )
+            casted_key = self._maybe_cast_indexer(key)
+            try:
+                return self._engine.get_loc(casted_key)
+            except KeyError as err:
+                raise KeyError(key) from err
+            except TypeError:
+                # If we have a listlike key, _check_indexing_error will raise
+                #  InvalidIndexError. Otherwise we fall through and re-raise
+  File "pandas\_libs\index.pyx",
+      line 138,
+      in pandas._libs.index.IndexEngine.get_loc
+
+  File "pandas\_libs\index.pyx",
+      line 165,
+      in pandas._libs.index.IndexEngine.get_loc
+
+  File "pandas\_libs\hashtable_class_helper.pxi",
+      line 5745,
+      in pandas._libs.hashtable.PyObjectHashTable.get_item
+
+  File "pandas\_libs\hashtable_class_helper.pxi",
+      line 5753,
+      in pandas._libs.hashtable.PyObjectHashTable.get_item
+
+The above exception was the direct cause of the following exception:
+  File "C:\Users\HP\anaconda3\lib\site-packages\flask\app.py",
+      line 2548,
+      in __call__
+      def __call__(self, environ: dict, start_response: t.Callable) -&gt; t.Any:
+        &#34;&#34;&#34;The WSGI server calls the Flask application object as the
+        WSGI application. This calls :meth:`wsgi_app`, which can be
+        wrapped to apply middleware.
+        &#34;&#34;&#34;
+        return self.wsgi_app(environ, start_response)
+  File "C:\Users\HP\anaconda3\lib\site-packages\flask\app.py",
+      line 2528,
+      in wsgi_app
+              try:
+                ctx.push()
+                response = self.full_dispatch_request()
+            except Exception as e:
+                error = e
+                response = self.handle_exception(e)
+            except:  # noqa: B001
+                error = sys.exc_info()[1]
+                raise
+            return response(environ, start_response)
+        finally:
+  File "C:\Users\HP\anaconda3\lib\site-packages\flask\app.py",
+      line 2525,
+      in wsgi_app
+          ctx = self.request_context(environ)
+        error: t.Optional[BaseException] = None
+        try:
+            try:
+                ctx.push()
+                response = self.full_dispatch_request()
+            except Exception as e:
+                error = e
+                response = self.handle_exception(e)
+            except:  # noqa: B001
+                error = sys.exc_info()[1]
+  File "C:\Users\HP\anaconda3\lib\site-packages\flask\app.py",
+      line 1822,
+      in full_dispatch_request
+              request_started.send(self)
+            rv = self.preprocess_request()
+            if rv is None:
+                rv = self.dispatch_request()
+        except Exception as e:
+            rv = self.handle_user_exception(e)
+        return self.finalize_request(rv)
+
+    def finalize_request(
+        self,
+        rv: t.Union[ft.ResponseReturnValue, HTTPException],
+  File "C:\Users\HP\anaconda3\lib\site-packages\flask\app.py",
+      line 1820,
+      in full_dispatch_request
+
+        try:
+            request_started.send(self)
+            rv = self.preprocess_request()
+            if rv is None:
+                rv = self.dispatch_request()
+        except Exception as e:
+            rv = self.handle_user_exception(e)
+        return self.finalize_request(rv)
+
+    def finalize_request(
+  File "C:\Users\HP\anaconda3\lib\site-packages\flask\app.py",
+      line 1796,
+      in dispatch_request
+              and req.method == &#34;OPTIONS&#34;
+        ):
+            return self.make_default_options_response()
+        # otherwise dispatch to the handler for that endpoint
+        view_args: t.Dict[str, t.Any] = req.view_args  # type: ignore[assignment]
+        return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+
+    def full_dispatch_request(self) -&gt; Response:
+        &#34;&#34;&#34;Dispatches the request and on top of that performs request
+        pre and postprocessing as well as HTTP exception catching and
+        error handling.
+  File "C:\Users\HP\Desktop\dataset_preparation\app.py",
+      line 10,
+      in recommend_projects
+
+@app.route(&#39;/recommend&#39;, methods=[&#39;POST&#39;])
+def recommend_projects():
+    data = request.get_json()
+    project_title = data[&#39;project_title&#39;]
+    recommendations = get_recommendations(project_title)
+    return jsonify({&#39;recommendations&#39;: recommendations})
+
+if __name__ == &#39;__main__&#39;:
+    app.run(debug=True)
+  File "C:\Users\HP\Desktop\dataset_preparation\your_recommender_code.py",
+      line 32,
+      in get_recommendations
+
+    similarity = cosine_similarity(vectors)
+    movie_index = new_df[new_df[&#39;title&#39;] == project_title].index[0]
+    distances = similarity[movie_index]
+    movies_list = sorted(list(enumerate(distances)), reverse=True, key=lambda x: x[1])[1:6]
+    recommendations = [new_df.iloc[i[0]][&#39;Project Title&#39;] for i in movies_list]
+
+    return recommendations
+  File "C:\Users\HP\Desktop\dataset_preparation\your_recommender_code.py",
+      line 32,
+      in &lt;listcomp&gt;
+
+    similarity = cosine_similarity(vectors)
+    movie_index = new_df[new_df[&#39;title&#39;] == project_title].index[0]
+    distances = similarity[movie_index]
+    movies_list = sorted(list(enumerate(distances)), reverse=True, key=lambda x: x[1])[1:6]
+    recommendations = [new_df.iloc[i[0]][&#39;Project Title&#39;] for i in movies_list]
+
+    return recommendations
+  File "C:\Users\HP\anaconda3\lib\site-packages\pandas\core\series.py",
+      line 981,
+      in __getitem__
+
+        if is_integer(key) and self.index._should_fallback_to_positional:
+            return self._values[key]
+
+        elif key_is_scalar:
+            return self._get_value(key)
+
+        if is_hashable(key):
+            # Otherwise index.get_value will raise InvalidIndexError
+            try:
+                # For labels that don&#39;t resolve as scalars like tuples and frozensets
+  File "C:\Users\HP\anaconda3\lib\site-packages\pandas\core\series.py",
+      line 1089,
+      in _get_value
+          &#34;&#34;&#34;
+        if takeable:
+            return self._values[label]
+
+        # Similar to Index.get_value, but we do not fall back to positional
+        loc = self.index.get_loc(label)
+        return self.index._get_values_for_loc(self, loc, label)
+
+    def __setitem__(self, key, value) -&gt; None:
+        check_deprecated_indexers(key)
+        key = com.apply_if_callable(key, self)
+  File "C:\Users\HP\anaconda3\lib\site-packages\pandas\core\indexes\base.py",
+      line 3804,
+      in get_loc
+                  )
+            casted_key = self._maybe_cast_indexer(key)
+            try:
+                return self._engine.get_loc(casted_key)
+            except KeyError as err:
+                raise KeyError(key) from err
+            except TypeError:
+                # If we have a listlike key, _check_indexing_error will raise
+                #  InvalidIndexError. Otherwise we fall through and re-raise
+                #  the TypeError.
+                self._check_indexing_error(key)
+  KeyError: &#39;Project Title&#39;
+
+      This is the Copy/Paste friendly version of the traceback.
+
+    Traceback (most recent call last):
+  File &#34;C:\Users\HP\anaconda3\lib\site-packages\pandas\core\indexes\base.py&#34;, line 3802, in get_loc
+    return self._engine.get_loc(casted_key)
+  File &#34;pandas\_libs\index.pyx&#34;, line 138, in pandas._libs.index.IndexEngine.get_loc
+  File &#34;pandas\_libs\index.pyx&#34;, line 165, in pandas._libs.index.IndexEngine.get_loc
+  File &#34;pandas\_libs\hashtable_class_helper.pxi&#34;, line 5745, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File &#34;pandas\_libs\hashtable_class_helper.pxi&#34;, line 5753, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: &#39;Project Title&#39;
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File &#34;C:\Users\HP\anaconda3\lib\site-packages\flask\app.py&#34;, line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+  File &#34;C:\Users\HP\anaconda3\lib\site-packages\flask\app.py&#34;, line 2528, in wsgi_app
+    response = self.handle_exception(e)
+  File &#34;C:\Users\HP\anaconda3\lib\site-packages\flask\app.py&#34;, line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File &#34;C:\Users\HP\anaconda3\lib\site-packages\flask\app.py&#34;, line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File &#34;C:\Users\HP\anaconda3\lib\site-packages\flask\app.py&#34;, line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File &#34;C:\Users\HP\anaconda3\lib\site-packages\flask\app.py&#34;, line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File &#34;C:\Users\HP\Desktop\dataset_preparation\app.py&#34;, line 10, in recommend_projects
+    recommendations = get_recommendations(project_title)
+  File &#34;C:\Users\HP\Desktop\dataset_preparation\your_recommender_code.py&#34;, line 32, in get_recommendations
+    recommendations = [new_df.iloc[i[0]][&#39;Project Title&#39;] for i in movies_list]
+  File &#34;C:\Users\HP\Desktop\dataset_preparation\your_recommender_code.py&#34;, line 32, in &lt;listcomp&gt;
+    recommendations = [new_df.iloc[i[0]][&#39;Project Title&#39;] for i in movies_list]
+  File &#34;C:\Users\HP\anaconda3\lib\site-packages\pandas\core\series.py&#34;, line 981, in __getitem__
+    return self._get_value(key)
+  File &#34;C:\Users\HP\anaconda3\lib\site-packages\pandas\core\series.py&#34;, line 1089, in _get_value
+    loc = self.index.get_loc(label)
+  File &#34;C:\Users\HP\anaconda3\lib\site-packages\pandas\core\indexes\base.py&#34;, line 3804, in get_loc
+    raise KeyError(key) from err
+KeyError: &#39;Project Title&#39;
+  The debugger caught an exception in your WSGI application.  You can now
+  look at the traceback which led to the error.
+  If you enable JavaScript you can also use additional features such as code
+  execution (if the evalex feature is enabled), automatic pasting of the
+  exceptions and much more.
+
+        Brought to you by DON'T PANIC, your
+        friendly Werkzeug powered traceback interpreter.
+
+
+
+
+        Console Locked
+
+          The console is locked and needs to be unlocked by entering the PIN.
+          You can find the PIN printed out on the standard output of your
+          shell that runs the server.
+
+          PIN:
+
+
+
+
+
+
+    recommendations = [new_df.iloc[i[0]]['Project Title'] for i in movies_list]
+  File "C:\Users\HP\anaconda3\lib\site-packages\pandas\core\series.py", line 981, in __getitem__
+    return self._get_value(key)
+  File "C:\Users\HP\anaconda3\lib\site-packages\pandas\core\series.py", line 1089, in _get_value
+    loc = self.index.get_loc(label)
+  File "C:\Users\HP\anaconda3\lib\site-packages\pandas\core\indexes\base.py", line 3804, in get_loc
+    raise KeyError(key) from err
+KeyError: 'Project Title'
+-->
+At line:1 char:1
++ Invoke-RestMethod -Method Post -Uri http://127.0.0.1:5000/recommend - ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (System.Net.HttpWebRequest:HttpWebRequest) [Invoke-RestMethod], WebException
+    + FullyQualifiedErrorId : WebCmdletWebResponseException,Microsoft.PowerShell.Commands.InvokeRestMethodCommand
+PS C:\Users\HP\Desktop\dataset_preparation> Invoke-RestMethod -Method Post -Uri http://127.0.0.1:5000/recommend -ContentType "application/json" -Body '{"project_title": "Adversarial Machine Learning for Cyber Defense"}'
+
+recommendations
+---------------
+{Adversarial Machine Learning for Cyber Threat Detection, Adversarial Machine Learning for Cyber Defense, Adversarial Attacks and Defenses in De... 
+
+
+PS C:\Users\HP\Desktop\dataset_preparation>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+PS C:\Users\HP\Desktop\dataset_preparation> python app.py
+ * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+ * Restarting with watchdog (windowsapi)
+ * Debugger is active!
+ * Debugger PIN: 135-048-863
+ * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\pandas\\core\\series.py', reloading
+ * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\pandas\\core\\indexes\\base.py', reloading
+127.0.0.1 - - [14/May/2024 11:59:02] "POST /recommend HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\pandas\core\indexes\base.py", line 3802, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 165, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5745, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5753, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Project Title'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\lib\site-packages\flask\app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "C:\Users\HP\anaconda3\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+  File "C:\Users\HP\anaconda3\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\HP\anaconda3\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\HP\anaconda3\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\HP\anaconda3\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\HP\Desktop\dataset_preparation\app.py", line 10, in recommend_projects
+    recommendations = get_recommendations(project_title)
+  File "C:\Users\HP\Desktop\dataset_preparation\your_recommender_code.py", line 32, in get_recommendations
+    recommendations = [new_df.iloc[i[0]]['Project Title'] for i in movies_list]
+  File "C:\Users\HP\Desktop\dataset_preparation\your_recommender_code.py", line 32, in <listcomp>
+    recommendations = [new_df.iloc[i[0]]['Project Title'] for i in movies_list]
+  File "C:\Users\HP\anaconda3\lib\site-packages\pandas\core\series.py", line 981, in __getitem__
+    return self._get_value(key)
+  File "C:\Users\HP\anaconda3\lib\site-packages\pandas\core\series.py", line 1089, in _get_value
+    loc = self.index.get_loc(label)
+  File "C:\Users\HP\anaconda3\lib\site-packages\pandas\core\indexes\base.py", line 3804, in get_loc
+    raise KeyError(key) from err
+KeyError: 'Project Title'
+ * Restarting with watchdog (windowsapi)
+ * Debugger is active!
+ * Debugger PIN: 135-048-863
+ * Detected change in 'C:\\Users\\HP\\Desktop\\dataset_preparation\\your_recommender_code.py', reloading
+ * Detected change in 'C:\\Users\\HP\\Desktop\\dataset_preparation\\your_recommender_code.py', reloading
+ * Detected change in 'C:\\Users\\HP\\Desktop\\dataset_preparation\\your_recommender_code.py', reloading
+ * Restarting with watchdog (windowsapi)
+ * Debugger is active!
+ * Debugger PIN: 135-048-863
+forrtl: error (200): program aborting due to control-C event
+Image              PC                Routine            Line        Source
+libifcoremd.dll    00007FF9E923DF54  Unknown               Unknown  Unknown
+KERNELBASE.dll     00007FFA8B4B7D17  Unknown               Unknown  Unknown
+KERNEL32.DLL       00007FFA8C98257D  Unknown               Unknown  Unknown
+forrnttdll.dll          00007FFA8DF0AA48  Unknown               Unknown  Unknown
+l: error (200): program aborting due to control-C event
+Image              PC                Routine            Line        Source
+libifcoremd.dll    00007FF9E923DF54  Unknown               Unknown  Unknown
+KERNELBASE.dll     00007FFA8B4B7D17  Unknown               Unknown  Unknown
+KERNEL32.DLL       00007FFA8C98257D  Unknown               Unknown  Unknown
+ntdll.dll          00007FFA8DF0AA48  Unknown               Unknown  Unknown
+PS C:\Users\HP\Desktop\dataset_preparation> python app.py
+ * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+ * Restarting with watchdog (windowsapi)
+ * Debugger is active!
+ * Debugger PIN: 135-048-863
+127.0.0.1 - - [14/May/2024 12:04:04] "POST /recommend HTTP/1.1" 200
+
+
+
+
+
+
+
+
+---------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+const projectDetails={
+    projectHeading:"movie recommender system",
+    problemSummary:"",
+    problemImage:"https://repository-images.githubusercontent.com/275336521/20d38e00-6634-11eb-9d1f-6a5232d0f84f"
+}
